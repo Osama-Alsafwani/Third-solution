@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Young-Serf";
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Outfit-reg";
+    src: url(./assets/fonts/outfit/static/Outfit-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Outfit-bold";
+    src: url(./assets/fonts/outfit/static/Outfit-Bold.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    border-color: hsla(0, 0%, 100%, 0.48);
+    ;
+
+}
+
+body {
+    height: 2000px;
+    position: relative;
+    background-color: hsl(30, 54%, 90%);
+    font-family: 'Outfit-reg';
+    font-size: 18px;
+}
+
+body,
+li {
+    color: hsl(20, 1.3%, 56.3%);
+
+}
+
+.container {
+    position: absolute;
+    width: 780px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 35px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+
+
+h1 {
+    font-size: 45px;
+    color: hsl(24, 5%, 18%);
+}
+
+h1,
+h2 {
+    font-family: 'Young-Serf', serif;
+
+}
+
+span {
+    font-family: 'Outfit-bold';
+    padding-left: 14px;
+    color: hsl(30, 10%, 34%);
+}
+
+img,
+table {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.pre-list {
+    background-color: hsl(330, 100%, 98%);
+    padding: 2px 27px;
+    border-radius: inherit;
+}
+
+.pre-list>ul {
+    padding-left: 22px;
+
+}
+
+.pre-list>ul>li::marker,
+.pre-list>h2 {
+    color: hsl(332, 51%, 32%);
+}
+
+.ingr-list {
+    padding-top: 5px;
+}
+
+.ingr-list>ul,
+.ingr-list>ul>li,
+h2+ol,
+ol>li {
+    padding-left: 20px;
+}
+
+
+
+h2,
+li::marker,
+tr>td:last-child {
+    color: hsl(14, 45%, 36%);
+}
+
+ol>li>span {
+    padding-left: 0;
+}
+
+li {
+    padding-bottom: 15px;
+}
+
+
+tr>td {
+    padding: 10px 30px;
+    border-bottom-style: solid;
+    border-color: hsla(0, 6.7%, 82.4%, 0.36);
+}
+
+tr:last-child>td {
+    border-style: none;
+}
+
+@media (max-width:792px) {
+    * {
+        padding-left: 16px;
+    }
+
+    img,
+    .container {
+        border-radius: 0;
+
+    }
+
+    img,
+    .pre-list>h2,
+    .pre-list>ul>li>span {
+        padding: 0;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        width: 350px;
+        top: 36%;
+        padding: 0;
+    }
+
+    .pre-list {
+        margin: 0 37px;
+    }
+
+    
+    .ingr-list>ul>li,
+    ol>li {
+        padding-left: 15px;
+        margin-left: 10px;
+    }
+
+
+}
